@@ -457,6 +457,11 @@ class Coinpayments
         return $this->apiCall(CoinpaymentsCommand::GET_PBN_INFO, ['merchant' => $this->merchant_id]);
     }
 
+    public function getBasicInfo ()
+    {
+        return $this->apiCall(CoinpaymentsCommand::GET_BASIC_INFO);
+    }
+
     /**
      * @param string $cmd the command to be executed
      * @param array  $req
